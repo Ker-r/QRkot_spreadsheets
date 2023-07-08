@@ -2,6 +2,12 @@ from typing import Optional
 
 from pydantic import BaseSettings, EmailStr
 
+VERSION_SHEETS = 'v4'
+ROW = 100
+COLUMN = 11
+VERSION_DRIVE = 'v3'
+RANGE = 'A1:E30'
+
 
 class Settings(BaseSettings):
     app_title: str = 'Фонд поддержки котиков QRKot'
